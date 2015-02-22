@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<title>Detroit Demolition</title>
-	<!--<script src="http://d3js.org/d3.v3.min.js"></script>-->
-	<link rel="stylesheet" href="leaflet-0.7.3/leaflet.css">
-	<script src="leaflet-0.7.3/leaflet.js"></script>
-	<link rel="stylesheet" href="datad.css">
-	<script src="datad.js"></script>
+    <meta charset="utf-8">
+    <title>Detroit Demolition</title>
+    <!--<script src="http://d3js.org/d3.v3.min.js"></script>-->
+    <link rel="stylesheet" href="leaflet-0.7.3/leaflet.css">
+    <script src="leaflet-0.7.3/leaflet.js"></script>
+    <link rel="stylesheet" href="Leaflet.markercluster/dist/MarkerCluster.css">
+    <script src="Leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="datad.css">
+    <script src="datad.js"></script>
 </head>
 <body>
-<h1>
-	Detroit<br>
-	<small>
-		Projected Demolitions in Hardest Hit Fund Areas (Round 1)<br>
-		<a href="https://data.detroitmi.gov/Property-Parcels/Projected-Demolitions-in-Hardest-Hit-Fund-Areas-Ro/3t7p-zq9t" target="_blank">data.detroitmi.gov/Property-Parcels/Projected-Demolitions-in-Hardest-Hit-Fund-Areas-Ro/3t7p-zq9t</a><br>
-		Some of the locations don&apos;t seem to have correct longitude/latitude values.<br>
-		(ɔ) No Rights Reserved. Source: <a href="https://github.com/goranb/detroit-data">github.com/goranb/detroit-data</a>
-	</small>
-</h1>
+<div id="banner">
+    <h1>Projected Demolitions in Hardest Hit Fund Areas (Round 1)</h1>
+    <a href="https://data.detroitmi.gov/Property-Parcels/Projected-Demolitions-in-Hardest-Hit-Fund-Areas-Ro/3t7p-zq9t" target="_blank">data.detroitmi.gov/Property-Parcels/Projected-Demolitions-in-Hardest-Hit-Fund-Areas-Ro/3t7p-zq9t</a>
+    <div>
+        <small>
+            Some of the locations don&apos;t seem to have correct longitude/latitude values.<br>
+            (ɔ) No Rights Reserved. Source: <a href="https://github.com/goranb/detroit-data">github.com/goranb/detroit-data</a>
+        </small>
+    </div>
+
+</div>
 <div id="map" style="min-height: 500px;"></div>
 </body>
 </html>
