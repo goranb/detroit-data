@@ -28,7 +28,10 @@ window.onload = function(e)
                 }
                 return new L.DivIcon({
                     className: 'icon cluster-icon cluster-icon-' + level,
-                    html: cluster.getChildCount()
+                    html: '<span class="label">' + cluster.getChildCount() + '</span>',
+                    iconSize: [50, 50],
+                    iconAnchor: [25, 25],
+                    popupAnchor: [0, 0]
                 });
             }
         });
@@ -41,10 +44,11 @@ window.onload = function(e)
             {
                 var m = L.marker([data[i].location.latitude, data[i].location.longitude], {
                         icon: new L.DivIcon({
-                            className: 'icon'
+                            className: 'icon',
+                            iconSize: [10, 10]
                         })
-
                     })
+                    //.addTo(map)
                     .bindPopup(data[i].property_address + '<br>' + data[i].name);
 
                 markers.addLayer(m);
