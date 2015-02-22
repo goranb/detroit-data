@@ -31,7 +31,7 @@ window.onload = function(e)
                     html: '<span class="label">' + cluster.getChildCount() + '</span>',
                     iconSize: [50, 50],
                     iconAnchor: [25, 25],
-                    popupAnchor: [0, 0]
+                    popupAnchor: [25, 25]
                 });
             }
         });
@@ -45,7 +45,8 @@ window.onload = function(e)
                 var m = L.marker([data[i].location.latitude, data[i].location.longitude], {
                         icon: new L.DivIcon({
                             className: 'icon',
-                            iconSize: [10, 10]
+                            iconSize: [10, 10],
+                            popupAnchor: [5, 5]
                         })
                     })
                     //.addTo(map)
