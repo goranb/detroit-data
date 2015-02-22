@@ -34,4 +34,9 @@ window.onload = function(e)
 
 		worker.postMessage("https://data.detroitmi.gov/resource/3t7p-zq9t.json");
 	};
+
+	document.getElementById('dataset-toggle').onclick = function()
+	{
+		document.getElementById('dataset-data').style.display = 'block';
+	}
 };
