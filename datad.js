@@ -14,7 +14,7 @@ window.onload = function(e)
         });
 
         L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+            attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.'
         }).addTo(map);
 
         var markers = new L.MarkerClusterGroup({
@@ -57,6 +57,6 @@ window.onload = function(e)
             map.addLayer(markers);
         }
 
-        worker.postMessage("https://data.detroitmi.gov/resource/3t7p-zq9t.json");
+        worker.postMessage("https://data.detroitmi.gov/resource/nfx3-ihbp.json");
     };
 };
