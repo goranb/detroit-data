@@ -1,1 +1,1 @@
-A little hack to visualise some of Detroit's open data
+A little hack to visualize some of Detroit's open data
